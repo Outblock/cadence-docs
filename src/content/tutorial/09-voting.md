@@ -6,26 +6,16 @@ In this tutorial, we're going to deploy a contract that allows users to vote on 
 
 ---
 
-:::info
-
-Open the starter code for this tutorial in the Flow Playground:
-<a
-href="https://play.flow.com/e8e2af39-370d-4a52-9f0b-bfb3b12c7eff"
-target="_blank"
+> [!TIP]
 >
-https://play.flow.com/e8e2af39-370d-4a52-9f0b-bfb3b12c7eff
-</a>
-The tutorial will be asking you to take various actions to interact with this code.
+> Open the starter code for this tutorial in the [Flow Playground](https://play.flow.com/e8e2af39-370d-4a52-9f0b-bfb3b12c7eff): https://play.flow.com/e8e2af39-370d-4a52-9f0b-bfb3b12c7eff
+> The tutorial will be asking you to take various actions to interact with this code.
 
-:::
-
-:::info[Action]
-
-Instructions that require you to take action are always included in a callout box like this one.
-These highlighted actions are all that you need to do to get your code running,
-but reading the rest is necessary to understand the language's design.
-
-:::
+> [!NOTE]
+>
+> Instructions that require you to take action are always included in a callout box like this one.
+> These highlighted actions are all that you need to do to get your code running,
+> but reading the rest is necessary to understand the language's design.
 
 With the advent of blockchain technology and smart contracts,
 it has become popular to try to create decentralized voting mechanisms that allow large groups of users to vote completely on chain.
