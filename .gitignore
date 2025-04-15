@@ -41,7 +41,7 @@ Thumbs.db
 _site/
 .docusaurus
 .cache-loader
-public/
+public/_pagefind
 
 # Lock files
 package-lock.json
