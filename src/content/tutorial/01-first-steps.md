@@ -36,11 +36,9 @@ After completing this tutorial, you'll be able to:
 * Explore the contracts and storage associated with test accounts.
 
 
-:::info[Action]
-
-Instructions that require you to take action are always included in a call out box like this one.
-
-:::
+> [!NOTE]
+>
+> Instructions that require you to take action are always included in a call out box like this one.
 
 ## The Flow Developer Playground
 
@@ -52,17 +50,11 @@ It has been primarily tested and optimized for Google Chrome, but other browsers
 
 The playground comes pre-loaded with contract and transaction templates that correspond to each of the tutorials in this series.  At the top of the page, you'll find it in a call out like this one:
 
-:::info[Action]
-
-Open the starter code for this tutorial in the Flow Playground: <br />
-<a
-  href="https://play.flow.com/367d1462-f291-481f-aa14-02bb5ce3e897"
-  target="_blank"
+> [!NOTE]
 >
-  https://play.flow.com/367d1462-f291-481f-aa14-02bb5ce3e897
-</a>
+> Open the starter code for this tutorial in the [Flow Playground](https://play.flow.com/367d1462-f291-481f-aa14-02bb5ce3e897):
+> https://play.flow.com/367d1462-f291-481f-aa14-02bb5ce3e897
 
-:::
 
 When you click on one of these links, the tutorial code will open in a new tab and the contracts, transactions, and scripts will be loaded into the templates in the Playground for you to use. You will need to navigate between the editor and this tutorial to read instructions and make changes to your code.
 
@@ -80,11 +72,9 @@ Flow can run smart contracts written in [Cadence].  It can also run older contra
 
 Accounts are the primary conduit for user interaction with on-chain code and assets.  Users authorize transactions with their accounts and store their owned assets in their account storage.
 
-:::warning
-
-Flow is different from most other blockchains in that contracts, assets, and information owned by a user or associated with their wallet address **are stored in the user's account**.  
-
-:::
+> [!WARNING]
+>
+> Flow is different from most other blockchains in that contracts, assets, and information owned by a user or associated with their wallet address **are stored in the user's account**.  
 
 We've used the `warning` label to get your attention, but this is a **good thing**!  In most other chains, a coding error that accidentally changes a single number in a ledger can destroy, change, or duplicate ownership of an asset or assets.  It's like a medieval shop with a bunch of paper IOUs having a gust of wind blow through vs. having the gold in your pocket.
 
@@ -96,11 +86,10 @@ They're listed in the `Accounts` section on the bottom left part of the playgrou
 
 ![Playground Intro](/playground-intro.png)
 
-:::info[Action]
+> [!NOTE]
+>
+> Click on a few of the accounts.  They're empty when first created, but you'll see contracts and storage data here as you go through the tutorials.
 
-Click on a few of the accounts.  They're empty when first created, but you'll see contracts and storage data here as you go through the tutorials.
-
-:::
 
 ![Account View](/playground-account-view.png)
 
@@ -114,19 +103,15 @@ When you have Cadence code open in the account editor that contains a contract, 
 
 ![Deploy Contract](/deploybox.png)
 
-:::info[Action]
-
-Click the button to `Deploy` the contract.
-
-:::
+> [!NOTE]
+>
+> Click the button to `Deploy` the contract.
 
 After a few seconds, the contract will deploy. 
 
-:::info[Action]
-
-Select `0x06-Default` in the `Accounts` list.
-
-:::
+> [!NOTE]
+>
+> Select `0x06-Default` in the `Accounts` list.
 
 
 You'll see the name of the contract and the block height it was deployed at in the list of `Deployed Contracts`.  You'll also see that there are `FlowToken` objects listed in the `Account Storage` section. Every Flow account is created with the ability to manage Flow Tokens.
@@ -137,11 +122,9 @@ You'll see the name of the contract and the block height it was deployed at in t
 
 In Cadence, scripts are simple, transaction-like snippets of code that you can use to **read** onchain data that is public.
 
-:::info[Action]
-
-Open the `GetGreeting` script and `Execute` it.
-
-:::
+> [!NOTE]
+>
+> Open the `GetGreeting` script and `Execute` it.
 
 This script loads the instance of the `HelloWorld` contract you deployed with account `0x06` and returns the result of calling the `hello` function, which is the value stored onchain in the contract's `greeting` field.
 
@@ -153,21 +136,17 @@ Cadence transactions are also written in Cadence.
 
 In the `Transactions` folder, you'll find an example of one.
 
-:::info[Action]
-
-Open the `ChangeGreeting` transaction, enter a new `greeting`, and `Send` it. 
-
-:::
+> [!NOTE]
+>
+> Open the `ChangeGreeting` transaction, enter a new `greeting`, and `Send` it. 
 
 Doing so executes a transaction to call `changeGreeting` and update the value in `greeting` for this specific instance of `HelloWorld`, deployed by address `0x06`.
 
 Once the transaction completes, you'll see the output in the `Log` at the bottom of the window.
 
-:::info[Action]
-
-Open the `GetGreeting` script and `Execute` it again.
-
-:::
+> [!NOTE]
+>
+> Open the `GetGreeting` script and `Execute` it again.
 
 You'll now see your new greeting returned in the log!
 
