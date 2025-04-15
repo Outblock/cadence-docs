@@ -6,11 +6,9 @@ sidebar_label: Testing
 The Cadence testing framework provides a convenient way to write tests for Cadence programs in Cadence.
 This functionality is provided by the built-in `Test` contract.
 
-:::tip
-
-The testing framework can only be used off-chain, e.g. by using the [Flow CLI](https://developers.flow.com/tools/flow-cli).
-
-:::
+> [!TIP]
+>
+> The testing framework can only be used off-chain, e.g. by using the [Flow CLI](https://developers.flow.com/tools/flow-cli).
 
 Tests must be written in the form of a Cadence script.
 A test script may contain testing functions that starts with the `test` prefix,
@@ -1156,12 +1154,10 @@ struct Configuration {
 }
 ```
 
-:::tip
+> [!TIP]
+>
+> The `Blockchain.useConfiguration` is a run-time alternative for [statically defining contract addresses in the flow.json config file](https://developers.flow.com/tools/flow-cli/flow.json/configuration.md#advanced-format).
 
-The `Blockchain.useConfiguration` is a run-time alternative for
-[statically defining contract addresses in the flow.json config file](https://developers.flow.com/tools/flow-cli/flow.json/configuration.md#advanced-format).
-
-:::
 
 The configurations can be specified during the test setup as a best-practice.
 

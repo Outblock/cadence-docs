@@ -21,11 +21,10 @@ Welcome to our series of guides that will get you up to speed on [Cadence] as qu
 
 This series makes use of the [Flow Playground] - an online IDE that enables you to easily write and test Cadence code in a simulated environment.
 
-:::tip
+> [!TIP]
+>
+> If you already know Solidity, you might want to review the [Cadence Guide for Solidity Developers].  It compares the two languages and points out the most impactful differences from the perspective of a Solidity dev.
 
-If you already know Solidity, you might want to review the [Cadence Guide for Solidity Developers].  It compares the two languages and points out the most impactful differences from the perspective of a Solidity dev.
-
-:::
 
 ## Objectives
 

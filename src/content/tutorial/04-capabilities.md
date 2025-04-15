@@ -89,11 +89,10 @@ Import `HelloWorld` and stub out a `transaction` with a `prepare` phase.
 
 :::
 
-:::tip
+> [!TIP]
+>
+> Cadence allows for static analysis of imported contracts.  You'll get errors in the transactions and scripts that import `HelloWorld` from `0x06` if you haven't deployed that contract.
 
-Cadence allows for static analysis of imported contracts.  You'll get errors in the transactions and scripts that import `HelloWorld` from `0x06` if you haven't deployed that contract.
-
-:::
 
 ```cadence create_link.cdc
 import HelloWorld from 0x06

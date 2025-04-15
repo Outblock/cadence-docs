@@ -29,11 +29,10 @@ Production-quality NFTs on Flow implement the [Flow NFT Standard], which defines
 
 This tutorial will teach you a basic method of creating simple NFTs to illustrate important language concepts, but will not use the full NFT Standard for the sake of simplicity.
 
-:::tip
+> [!TIP]
+>
+> If you're already comfortable with Cadence and have found this page looking for information on how to build production-ready NFTs, check out the [NFT Guide] and [Flow NFT Standard] repository.
 
-If you're already comfortable with Cadence and have found this page looking for information on how to build production-ready NFTs, check out the [NFT Guide] and [Flow NFT Standard] repository.
-
-:::
 
 ## Objectives
 
@@ -94,17 +93,14 @@ An NFT is also usually expected to include some metadata like a name, descriptio
 
 In Flow, this is possible, but you can and normally should store all the metadata associated with a token directly on-chain.  Unlike many other blockchain networks, **you do not need to consider string storage or manipulation as particularly expensive.**
 
-:::tip
+> [!TIP]
+>
+> This tutorial will stick to a simplified implementation.  Check out the [the NFT metadata guide] if you want to learn how to do this in production.
 
-This tutorial will stick to a simplified implementation.  Check out the [the NFT metadata guide] if you want to learn how to do this in production.
+> [!NOTE]
+>
+> Add a public `metadata` variable to your NFT.  For now, it can be a simple `String` to `String` [dictionary].  Update the `init` to also initialize a `description` in your metadata.
 
-:::
-
-:::info[Action]
-
-Add a public `metadata` variable to your NFT.  For now, it can be a simple `String` to `String` [dictionary].  Update the `init` to also initialize a `description` in your metadata.
-
-:::
 
 It should now look similar to:
 

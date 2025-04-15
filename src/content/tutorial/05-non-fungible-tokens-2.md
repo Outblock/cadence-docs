@@ -27,11 +27,9 @@ socialImageDescription: NFT social image.
 
 In the [last tutorial], you implemented a simple NFT that users could mint, hold, and trade, but there was a serious flaw - each user could only hold one NFT at a time.  In this tutorial, you'll improve your implementation to allow it to be able to grant users multiple NFTs and the tools needed to manage them.
 
-:::tip
-
-If you're already comfortable with Cadence and have found this page looking for information on how to build production-ready NFTs, check out the [NFT Guide] and [Flow NFT Standard] repository.
-
-:::
+> [!TIP]
+>
+> If you're already comfortable with Cadence and have found this page looking for information on how to build production-ready NFTs, check out the [NFT Guide] and [Flow NFT Standard] repository.
 
 ## Objectives
 
@@ -95,11 +93,10 @@ access(all) resource Collection {
 }
 ```
 
-:::tip
+> [!TIP]
+>
+> Cadence is an object-oriented language.  Inside of a composite type, such as a [resource], `self` refers to the instance of that type and **not** the contract itself.
 
-Cadence is an object-oriented language.  Inside of a composite type, such as a [resource], `self` refers to the instance of that type and **not** the contract itself.
-
-:::
 
 Dictionary definitions don't usually have the `@` symbol in the type specification, but because the `myNFTs` mapping stores resources, the whole field must become a resource type.  Therefore, you need the `@` symbol indicating that `ownedNFTs` is a resource type.
 
@@ -121,11 +118,9 @@ access(all) fun deposit(token: @NFT) {
 }
 ```
 
-:::tip
-
-Notice that we're using the `<-!` force assignment operator to move the token.  This will still give a runtime error if the location already has something else stored, but it won't give a typecheck error like the `<-` move operator would in this instance.
-
-:::
+> [!TIP]
+>
+> Notice that we're using the `<-!` force assignment operator to move the token.  This will still give a runtime error if the location already has something else stored, but it won't give a typecheck error like the `<-` move operator would in this instance.
 
 :::info[Action]
 
@@ -176,17 +171,13 @@ It needs to use [entitlements].
 
 Entitlements enable you to restrict the scope of access at a granular level, with the option to group restrictions under similarly named entitlements. Owners of resources can then use these entitlements to grant access to the subset of actions enabled by the authorized reference.
 
-:::tip
+> [!TIP]
+>
+> If you're used to Solidity, you can think of this as being similar to frameworks that enable you to use modifiers to limit some functions to specific addresses with the correct role, such as `onlyOwner`.
 
-If you're used to Solidity, you can think of this as being similar to frameworks that enable you to use modifiers to limit some functions to specific addresses with the correct role, such as `onlyOwner`.
-
-:::
-
-:::info[Action]
-
-Define an [entitlement] called `Withdraw` in your contract, at the contract level.
-
-:::
+> [!NOTE]
+>
+> Define an [entitlement] called `Withdraw` in your contract, at the contract level.
 
 ```cadence
 access(all) entitlement Withdraw
